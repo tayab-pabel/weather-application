@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Title -->
+    <title>Weather Application</title>
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <form class="col-md-6 m-auto mt-5 pt-5">
+        <div class="input-group mt-5 pt-5">
+          <input
+            id="cityName"
+            type="text"
+            class="form-control p-4"
+            placeholder="Enter a cityname (ex. Dhaka)"
+          />
+          <div class="input-group-append">
+            <button onclick="getWeatherData()" type="button" class="btn">
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="weather-status text-white text-center py-5">
+        <img
+          id="image"
+          src="https://openweathermap.org/img/wn/02d@2x.png"
+          alt=""
+        />
+        <h1 id="city" class="mt-3">Dhaka</h1>
+        <h2 id="temp"><span>38.06</span>&deg;C</h2>
+        <h4 class="lead">Description: <span id="des">Moderate Rain</span></h4>
+        <h4 class="lead">Humidity: <span id="hum">65</span></h4>
+      </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
